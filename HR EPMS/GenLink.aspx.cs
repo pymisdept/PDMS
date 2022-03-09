@@ -22,15 +22,28 @@ namespace HR_EPMS
     public partial class GenLink : System.Web.UI.Page
     {
         private string cnStr = ConfigurationManager.ConnectionStrings["cnCareer"].ConnectionString;
+        //private string cnStr = ConfigurationManager.ConnectionStrings["uatcnCareer"].ConnectionString;
         private SqlConnection cn;
         private static readonly ILog TxtLog = LogManager.GetLogger(typeof(GenLink));
+        //private static readonly string uatMode = ConfigurationManager.AppSettings["UATMODE"];
         protected void Page_Load(object sender, EventArgs e)
         {
-            cn = new SqlConnection(cnStr);
+            XmlConfigurator.Configure(new System.IO.FileInfo(Server.MapPath("~/log4net.config")));
+            TxtLog.Info("Generate Link start");
+            //if (uatMode == "true")
+            //{
+            //    TxtLog.Info("UAT connectiongStrings is:"+uatcnStr);
+            //    cn = new SqlConnection(cnStr);
+            //}
+            //else
+            //{
+            //    TxtLog.Info("Prod connectiongStrings is:" + cnStr);
+                cn = new SqlConnection(cnStr);
+            //}
             SqlCommand cmd = new SqlCommand();
             SqlDataReader reader;
             List<string> whereClause = new List<string>();
-            XmlConfigurator.Configure(new System.IO.FileInfo(Server.MapPath("~/log4net.config")));
+           
             string where = string.Empty;
             TxtLog.Info("Connect String： "+cnStr);
             if (IsPostBack)

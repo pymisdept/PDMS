@@ -96,6 +96,24 @@ namespace HR_EPMS
         protected global::System.Web.UI.HtmlControls.HtmlInputText v_Dateto;
 
         /// <summary>
+        /// btn_search control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_search;
+
+        /// <summary>
+        /// btn_Update control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Update;
+
+        /// <summary>
         /// grid_Employee control.
         /// </summary>
         /// <remarks>

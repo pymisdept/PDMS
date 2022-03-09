@@ -86,7 +86,7 @@ namespace HR_EPMS
             }
             catch (Exception ex)
             {
-
+                Response.Write(ex.Message);
             }
         }
 

@@ -11212,12 +11212,12 @@ form.user .btn-user {
 }
 
 footer.sticky-footer {
-  padding: 1rem 0;
-  flex-shrink: 0;
+    padding: 1rem 0;
+    flex-shrink: 0;
 }
 
 footer.sticky-footer .copyright {
-  line-height: 1;
+  line-height: 2;
   font-size: 0.8rem;
 }
 

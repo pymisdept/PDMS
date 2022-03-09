@@ -314,7 +314,7 @@
             searching: true,            
             "order": [ 0, 'desc' ],
             "columnDefs": [
-                { "width": "5%", "targets": 0},
+                { "width": "5%", "targets": 0, "visible": false },
                 { "width": "10%", "targets": 1},
                 { "width": "5%", "targets": 2},
                 { "width": "5%", "targets": 3},

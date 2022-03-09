@@ -47,7 +47,7 @@ namespace HR_EPMS
                 }
                 else
                 { 
-                    strURL = normallink+"GenMain.aspx?Key=" + T_Key + "&ID=" + recID + "&Position=" + T2_Key + "&Refcode=" + T3_Key;
+                    strURL = normallink+"GenMain.aspx?ID=" + recID;
                 }
 
                 Val = strURL;

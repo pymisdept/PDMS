@@ -21,9 +21,11 @@ namespace HR_EPMS
 {
     public partial class Main : System.Web.UI.Page
     {
+        private static readonly string uatMode = ConfigurationManager.AppSettings["UATMODE"];
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!Request.IsAuthenticated)
+
+            if (!Request.IsAuthenticated && uatMode == "false")
             {
                 HttpContext.Current.GetOwinContext().Authentication.Challenge(
                 new AuthenticationProperties { RedirectUri = "/" },

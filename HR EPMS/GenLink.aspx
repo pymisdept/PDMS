@@ -206,8 +206,8 @@
                                </asp:TemplateField>                                                           
                                 <asp:TemplateField HeaderText="General Link" HeaderStyle-HorizontalAlign="Center">  
                                     <ItemTemplate>  
-                                        <a href='https://career.pyengineering.com/GeneralForm1/Genmain.aspx?Key=<%# Eval("Token")%>&ID=<%#Eval("ID")%>&Position=<%# Eval("Postion")%>&RefCode=<%# Eval("RefCode")%>' target="_blank" ><asp:Label runat="server" Text='<%# Eval("Lock").ToString()=="0" ? "":"Link | " %>'></asp:Label></a> 
-                                        <a href='Copylinkresult.aspx?Key=<%# Eval("Token")%>&ID=<%#Eval("ID")%>&Position=<%# Eval("Postion")%>&RefCode=<%# Eval("RefCode")%>&LinkType=2' target="_blank"><asp:Label runat="server" Text='<%# Eval("Lock").ToString()=="0" ? "":"Copy Link" %>'></asp:Label></a>
+                                        <a href='https://career.pyengineering.com/GeneralForm1/Genmain.aspx?ID=<%#Eval("ID")%>' target="_blank" ><asp:Label runat="server" Text='<%# Eval("Lock").ToString()=="0" ? "":"Link | " %>'></asp:Label></a> 
+                                        <a href='Copylinkresult.aspx?ID=<%#Eval("ID")%>&LinkType=2' target="_blank"><asp:Label runat="server" Text='<%# Eval("Lock").ToString()=="0" ? "":"Copy Link" %>'></asp:Label></a>
                                    </ItemTemplate>  
                                    <HeaderStyle HorizontalAlign="Center"></HeaderStyle>
                                </asp:TemplateField>        
